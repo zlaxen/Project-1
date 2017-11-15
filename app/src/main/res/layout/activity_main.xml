@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.finalproject.MainActivity"
+    android:background="@drawable/m5"
+    tools:layout_editor_absoluteY="73dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:id="@+id/Enemies"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/jurus"
+        tools:layout_editor_absoluteY="95dp"
+        tools:layout_editor_absoluteX="298dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginRight="83dp"
+        android:layout_above="@+id/PB"
+        android:layout_toLeftOf="@+id/Hp2"
+        android:layout_toStartOf="@+id/Hp2" />
+
+    <ImageView
+        android:id="@+id/Mine"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/serang"
+        tools:layout_editor_absoluteY="95dp"
+        tools:layout_editor_absoluteX="222dp"
+        android:layout_alignTop="@+id/Enemies"
+        android:layout_toLeftOf="@+id/Enemies"
+        android:layout_toStartOf="@+id/Enemies"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp" />
+
+    <Button
+        android:id="@+id/RB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/jurus"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="45dp"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/PB"
+        android:layout_alignStart="@+id/PB" />
+
+    <Button
+        android:id="@+id/PB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/berlindung"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="45dp"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/RB"
+        android:layout_alignLeft="@+id/SB"
+        android:layout_alignStart="@+id/SB" />
+
+    <TextView
+        android:id="@+id/Hp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Hp1"
+        android:layout_alignBottom="@+id/Hp1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Professor Health = 10"
+        tools:layout_editor_absoluteX="431dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/SB"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:background="@drawable/serang"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="45dp"
+        android:layout_alignTop="@+id/Mine"
+        android:layout_alignLeft="@+id/Hp1"
+        android:layout_alignStart="@+id/Hp1" />
+
+    <TextView
+        android:id="@+id/Hp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Colleges Health = 10"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</RelativeLayout >
