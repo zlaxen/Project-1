@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bgg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/Enemies"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="200dp"
+                                android:layout_marginRight="200dp"
+                                app:srcCompat="@drawable/jurus"
+                                tools:layout_editor_absoluteX="298dp"
+                                tools:layout_editor_absoluteY="95dp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/Mine"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="208dp"
+                            android:layout_marginStart="208dp"
+                            app:srcCompat="@drawable/serang"
+                            tools:layout_editor_absoluteX="222dp"
+                            tools:layout_editor_absoluteY="95dp" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/PB"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="19dp"
+                        android:layout_marginLeft="155dp"
+                        android:layout_marginStart="155dp"
+                        android:background="@drawable/berlindung"
+                        tools:layout_editor_absoluteX="133dp"
+                        tools:layout_editor_absoluteY="45dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/RB"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="87dp"
+                    android:layout_marginStart="87dp"
+                    android:background="@drawable/jurus"
+                    tools:layout_editor_absoluteX="73dp"
+                    tools:layout_editor_absoluteY="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/SB"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_column="0"
+                android:layout_marginBottom="17dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp"
+                android:layout_row="1"
+                android:background="@drawable/serang"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Hp1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Hp2"
+        android:layout_alignBottom="@+id/Hp2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:text="Colleges Health = 4" />
+
+    <TextView
+        android:id="@+id/Hp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="19dp"
+        android:text="Lecturer Health = 10"
+        tools:layout_editor_absoluteX="431dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</RelativeLayout>

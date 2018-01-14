@@ -11,19 +11,19 @@ import android.content.Intent;
 
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class Medium extends AppCompatActivity {
 
     Button RB, SB, PB;
     ImageView Mine, Enemies;
     TextView Hp1, Hp2;
-    int PlayerLife = 10;
+    int PlayerLife = 7;
     int EnemyLife = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.medium);
 
         RB = (Button) findViewById(R.id.PB);
         SB = (Button) findViewById(R.id.SB);
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Mine.setImageResource(R.drawable.berlindung);
                 String message = play_turn("Guard");
-                Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Medium.this, message, Toast.LENGTH_SHORT).show();
                 Hp1.setText("Colleges Health: " + Integer.toString(PlayerLife));
                 Hp2.setText("Lecturer Health: " + Integer.toString(EnemyLife));
             }
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Mine.setImageResource(R.drawable.jurus);
                 String message = play_turn("Special");
-                Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Medium.this, message, Toast.LENGTH_SHORT).show();
                 Hp1.setText("Colleges Health: " + Integer.toString(PlayerLife));
                 Hp2.setText("Lecturer Health: " + Integer.toString(EnemyLife));
             }
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Mine.setImageResource(R.drawable.serang);
                 String message = play_turn("Attack");
-                Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Medium.this, message, Toast.LENGTH_SHORT).show();
                 Hp1.setText("Colleges Health: " + Integer.toString(PlayerLife));
                 Hp2.setText("Lecturer Health: " + Integer.toString(EnemyLife));
             }
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (computer_choice == player_choice){
-                return "Draw. No One Attack";
+            return "Draw. No One Attack";
         }
         else if (player_choice == "Special" && computer_choice == "Guard"){
             if (EnemyLife <= 0){
